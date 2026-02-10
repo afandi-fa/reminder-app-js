@@ -48,7 +48,7 @@ submitButton.addEventListener("click", async () => {
       "Content-Type": "application/json",
     },
 
-    body: JSON.stringify([{ name: titleValue, age: dateValue }]),
+    body: JSON.stringify([{ title: titleValue, date: dateValue }]),
   });
   window.location.reload();
 });
