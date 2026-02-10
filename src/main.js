@@ -18,15 +18,13 @@ async function main() {
 
   reminders.data.forEach((reminder) => {
     const reminderContainer = document.createElement("div");
-    const bigTitleElement = document.createElement("h2");
     const titleElement = document.createElement("h3");
     const dateElement = document.createElement("p");
 
-    bigTitleElement.textContent = "Your Reminder";
     titleElement.textContent = reminder.title;
     dateElement.textContent = reminder.date;
 
-    reminderContainer.append(bigTitleElement, titleElement, dateElement);
+    reminderContainer.append(titleElement, dateElement);
 
     document.body.append(reminderContainer);
   });
